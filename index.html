@@ -1,49 +1,65 @@
 ﻿<!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Didrik Wistedt – Sound Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Didrik Wistedt</h1>
-        <p>Sound Designer för spel</p>
+
+    <!-- HEADER -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Didrik Wistedt</h1>
+            <p>Sound Designer</p>
+        </div>
+        <div class="shelf-decoration">
+            <!-- Later: <img src="assets/plant.png" alt="Plant" class="plant" /> -->
+        </div>
     </header>
 
-    <section class="intro">
-        <h2>Välkommen!</h2>
-        <p>Jag skapar ljudvärldar för spelupplevelser – från atmosfäriska soundscapes till detaljerade ljudeffekter. Här är några av mina projekt:</p>
-    </section>
-
+    <!-- PROJECTS -->
     <section class="projects">
-        <div class="project">
-            <h3>Spelet "Echo Realm"</h3>
-            <p>Ett mystiskt plattformsspel med fokus på miljöljud och stämning.</p>
-            <audio controls>
-                <source src="ljud/echo-realm-demo.mp3" type="audio/mpeg" />
-                Din webbläsare stödjer inte ljuduppspelning.
-            </audio>
+        <div class="project" onclick="location.href='projects/mythbreak.html'">
+            <video autoplay muted loop playsinline>
+                <source src="assets/mythbreak.mp4" type="video/mp4" />
+            </video>
+            <div class="overlay">
+                <h2>Mythbreak</h2>
+                <p>Atmospheric action-adventure</p>
+            </div>
         </div>
 
-        <div class="project">
-            <h3>Spelet "Battle Beets"</h3>
-            <p>Ett färgglatt actionspel med rytmiska ljudeffekter.</p>
-            <audio controls>
-                <source src="ljud/battle-beets.mp3" type="audio/mpeg" />
-            </audio>
+        <div class="project" onclick="location.href='projects/rivet.html'">
+            <video autoplay muted loop playsinline>
+                <source src="assets/rivet.mp4" type="video/mp4" />
+            </video>
+            <div class="overlay">
+                <h2>RIVET</h2>
+                <p>Rhythmic arena shooter</p>
+            </div>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Kontakt</h2>
-        <p>📧 <a href="mailto:didrik@example.com">didrik@example.com</a></p>
-        <p>🎧 <a href="https://soundcloud.com/didrikwistedt" target="_blank">Lyssna på SoundCloud</a></p>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a sound designer specializing in video games, with a focus on crafting immersive, emotionally resonant experiences through audio. I work with FMOD, Unity, Unreal, and love designing everything from tiny UI clicks to large-scale environments and voice systems.
+        </p>
     </section>
 
-    <footer>
-        <p>© 2025 Didrik Wistedt</p>
+    <!-- CONTACT -->
+    <footer class="contact">
+        <p>
+            <a href="mailto:didrik@example.com">Email</a> •
+            <a href="https://linkedin.com/in/didrikwistedt" target="_blank">LinkedIn</a> •
+            <a href="https://soundcloud.com/didrikwistedt" target="_blank">SoundCloud</a>
+        </p>
+        <p class="copyright">© 2025 Didrik Wistedt</p>
     </footer>
+
 </body>
 </html>
